@@ -7,7 +7,7 @@ type Props = {};
 
 function Intro({}: Props) {
   const [text, count] = useTypewriter({
-    words: ["Hi, My Name is Vithya", "Blah blah blah", "Meh Meh MEh"],
+    words: ["Hi, My Name is Vithya", "Front-End Developer"],
     loop: true,
     delaySpeed: 2000,
   });
@@ -19,7 +19,7 @@ function Intro({}: Props) {
         src="https://media.licdn.com/dms/image/C4D03AQErpFbQxz3jfA/profile-displayphoto-shrink_200_200/0/1517368992595?e=1679529600&v=beta&t=Yi6wpWaoM8Nlhv5zkR8JYPzgUs4Glx9ZkqVXgCPKbGM"
         alt="profile"
       />
-      <div>
+      <div className="z-20">
         <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">
           Software Engineer
         </h2>
