@@ -9,22 +9,21 @@ function About({}: Props) {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="flex flex-col relative h-screen text-center md:text-left md:flex-row max-w-7xl px-10 mb-10 justify-evenly mx-auto items-center"
+      className="flex flex-col relative h-screen text-center md:text-left max-w-7xl px-10 mb-10 justify-evenly mx-auto items-center"
     >
       <h3 className="sectionHeader">About</h3>
       <div>
-        {" "}
         <motion.img
           initial={{ opacity: 0, x: -200 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1.2 }}
-          className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[600px]"
-          src="https://i.imgur.com/4VqFv52.gifv"
+          className="w-56 h-56 rounded-full object-cover mt-52 md:mt-10 md:w-96 md:h-96"
+          src="https://i.imgur.com/NnDN1QK.jpg?1"
         />
       </div>
 
-      <div className="space-y-10 px-0 md:px-10">
+      <div className="space-y-6 px-0 md:px-10">
         <h4 className="text-4xl font-semibold">
           Here is a little{" "}
           <span className="underline decoration-[#DA9840]">background</span>
