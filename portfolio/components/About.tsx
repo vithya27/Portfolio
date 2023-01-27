@@ -18,7 +18,7 @@ function About({}: Props) {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1.2 }}
-          className="w-56 h-56 rounded-full object-cover mt-52 md:mt-10 md:w-96 md:h-96"
+          className="w-56 h-56 rounded-full object-cover mt-44 md:mt-10 md:w-96 md:h-96"
           src="https://i.imgur.com/NnDN1QK.jpg?1"
         />
       </div>
@@ -26,9 +26,11 @@ function About({}: Props) {
       <div className="space-y-6 px-0 md:px-10">
         <h4 className="text-4xl font-semibold">
           Here is a little{" "}
-          <span className="underline decoration-[#DA9840]">background</span>
+          <span className="underline decoration-highlight-blue">
+            background
+          </span>
         </h4>
-        <p className="text-base">
+        <p className="text-base text-font-blue">
           A spark ignited in me the first time I wrote a line of code to print
           "Hello World" on a webpage. I decided to take the plunge into the
           field of software engineering from that moment. Web development is a
