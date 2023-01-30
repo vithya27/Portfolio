@@ -15,8 +15,8 @@ function Intro({}: Props) {
     <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
       <BackgroundCircles />
       <img
-        className="relative rounded-full h-32 w-32 mx-auto object-cover"
-        src="https://media.licdn.com/dms/image/C4D03AQErpFbQxz3jfA/profile-displayphoto-shrink_200_200/0/1517368992595?e=1679529600&v=beta&t=Yi6wpWaoM8Nlhv5zkR8JYPzgUs4Glx9ZkqVXgCPKbGM"
+        className="relative rounded-full h-40 w-40 mx-auto object-cover border-line-blue border-4"
+        src="https://i.imgur.com/TGl1Djr.jpg"
         alt="profile"
       />
       <div className="z-20">
