@@ -3,6 +3,7 @@ import { Inter } from "@next/font/google";
 import Header from "components/Header";
 import Intro from "components/Intro";
 import About from "components/About";
+import Experience from "components/Experience";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,6 +28,9 @@ export default function Home() {
       </section>
 
       {/* Experience */}
+      <section id="experience" className="snap-center">
+        <Experience />
+      </section>
 
       {/* Skills */}
 

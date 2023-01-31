@@ -30,7 +30,7 @@ function About({}: Props) {
             background
           </span>
         </h4>
-        <p className="text-base text-font-blue">
+        <p className="text-base text-font-blue text-justify">
           A spark ignited in me the first time I wrote a line of code to print
           "Hello World" on a webpage. I decided to take the plunge into the
           field of software engineering from that moment. Web development is a
