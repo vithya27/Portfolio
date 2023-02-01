@@ -4,7 +4,21 @@ import ExperienceCard from "./ExperienceCard";
 
 type Props = {};
 
-export default function Experience({}: Props) {
+interface ResumeProps {
+  src: string;
+  role: string;
+  company: string;
+  dates: string;
+  description: [string];
+}
+
+export default function Experience({
+  src,
+  role,
+  company,
+  dates,
+  description,
+}: ResumeProps) {
   return (
     <motion.div
       initial={{ opacity: 0 }}
