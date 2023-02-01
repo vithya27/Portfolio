@@ -4,13 +4,13 @@ type Props = {};
 
 export default function ExperienceCard({}: Props) {
   return (
-    <article className="flex flex-col mt-24 sm:mt-28 md:mt-96 rounded-lg items-center space-y-7 flex-shrink-0 w-[300px] md:w-[600px] xl:w-[900px] snap-center bg-line-blue p-10 hover:opacity-100 opacity-40 cursor-pointer transition-opacity overflow-auto">
+    <article className="flex flex-col mt-24 sm:mt-28 md:mt-60 h-screen rounded-lg items-center space-y-7 flex-shrink-0 w-[300px] md:w-[600px] xl:w-[900px] snap-center bg-line-blue p-5 hover:opacity-100 opacity-40 cursor-pointer transition-opacity overflow-y-auto">
       <motion.img
         initial={{ y: -100, opacity: 0 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.2 }}
         viewport={{ once: true }}
-        className="w-32 h-32 rounded-full  xl:w-[200px] xl:h-[200px] object-cover object-center"
+        className="w-32 h-32 rounded-full xl:w-[200px] xl:h-[200px] object-cover object-center"
         src="https://seeklogo.com/images/G/general-assembly-logo-D5C634F07A-seeklogo.com.png"
         alt=""
       />

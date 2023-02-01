@@ -23,14 +23,14 @@ function About({}: Props) {
         />
       </div>
 
-      <div className="space-y-6 px-0 md:px-10">
+      <div className="space-y-6 px-0 md:px-10 overflow-y-auto">
         <h4 className="text-4xl font-semibold">
           Here is a little{" "}
           <span className="underline decoration-highlight-blue">
             background
           </span>
         </h4>
-        <p className="text-base text-font-blue text-justify">
+        <p className="text-base text-font-blue text-justify ">
           A spark ignited in me the first time I wrote a line of code to print
           "Hello World" on a webpage. I decided to take the plunge into the
           field of software engineering from that moment. Web development is a
