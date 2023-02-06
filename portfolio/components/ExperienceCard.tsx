@@ -10,7 +10,7 @@ type ResumeProps = {
 
 export default function ExperienceCard(props: ResumeProps) {
   return (
-    <article className="flex flex-col overflow-y-auto mt-24 sm:mt-28 md:mt-60 h-screen rounded-lg items-center space-y-7 flex-shrink-0 w-[300px] md:w-[600px] xl:w-[900px] snap-center bg-line-blue p-5 hover:opacity-100 opacity-40 cursor-pointer transition-opacity">
+    <article className="flex flex-col overflow-y-auto mt-24 sm:mt-28 md:mt-60 h-screen rounded-lg items-center space-y-7 flex-shrink-0 w-[300px] md:w-[600px] xl:w-[900px] snap-center bg-line-blue p-5 hover:opacity-100 opacity-60 cursor-pointer transition-opacity">
       <motion.img
         initial={{ y: -100, opacity: 0 }}
         whileInView={{ opacity: 1, y: 0 }}
