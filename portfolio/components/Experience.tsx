@@ -1,24 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
 import ExperienceCard from "./ExperienceCard";
+import resumeData from "./resumeData";
+import { Roboto_Flex } from "@next/font/google";
 
 type Props = {};
 
-interface ResumeProps {
-  src: string;
-  role: string;
-  company: string;
-  dates: string;
-  description: [string];
-}
-
-export default function Experience({
-  src,
-  role,
-  company,
-  dates,
-  description,
-}: ResumeProps) {
+export default function Experience({}: Props) {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -31,19 +19,17 @@ export default function Experience({
       <div className="w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory">
         {/* Experience Card*/}
 
-        <ExperienceCard />
-
-        {/* Experience Card*/}
-
-        <ExperienceCard />
-
-        {/* Experience Card*/}
-
-        <ExperienceCard />
-
-        {/* Experience Card*/}
-
-        <ExperienceCard />
+        {resumeData.map((e: any) => {
+          return (
+            <ExperienceCard
+              src={e.src}
+              role={e.role}
+              company={e.company}
+              dates={e.dates}
+              description={e.description}
+            />
+          );
+        })}
       </div>
     </motion.div>
   );
