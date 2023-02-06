@@ -7,7 +7,11 @@ type Props = {};
 
 function Intro({}: Props) {
   const [text, count] = useTypewriter({
-    words: ["Hi, My Name is Vithya", "Coding Enthusiast"],
+    words: [
+      "Hi, My Name is Vithya",
+      "Coding Enthusiast",
+      "Fullstack Developer",
+    ],
     loop: true,
     delaySpeed: 2000,
   });

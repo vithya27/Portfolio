@@ -10,7 +10,7 @@ type ResumeProps = {
 
 export default function ExperienceCard(props: ResumeProps) {
   return (
-    <article className="flex flex-col overflow-y-auto mt-24 sm:mt-28 md:mt-60 h-screen rounded-lg items-center space-y-7 flex-shrink-0 w-[300px] md:w-[600px] xl:w-[900px] snap-center bg-line-blue p-5 hover:opacity-100 opacity-60 cursor-pointer transition-opacity">
+    <article className="flex flex-col overflow-y-auto mt-20 h-screen rounded-lg items-center space-y-7 flex-shrink-0 w-[300px] md:w-[600px] xl:w-[900px] snap-center bg-line-blue p-5 hover:opacity-100 opacity-60 cursor-pointer transition-opacity duration-200 overflow-hidden">
       <motion.img
         initial={{ y: -100, opacity: 0 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -28,7 +28,7 @@ export default function ExperienceCard(props: ResumeProps) {
         </p>
         <p className="uppercase py-5 text-muted-blue">{props.dates}</p>
 
-        <ul className="list-disc space-y-4 ml-5 text-base text-justify">
+        <ul className="list-disc space-y-4 ml-5 text-base text-justify h-3/6 overflow-y-auto">
           {props.description.map((e: any) => {
             return <li>{e}</li>;
           })}
