@@ -17,7 +17,7 @@ function Skill({ directionLeft, src, alt }: Props) {
         src={src}
         className="rounded-full border border-muted-blue object-cover w-24 h-24 filter group-hover:grayscale transition duration-300 ease-in-out"
       />
-      <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-highlight-blue h-24 w-24 xl:w-32 xl:h-32 rounded-full z-0">
+      <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-highlight-blue h-24 w-24 rounded-full z-0">
         <div className="flex items-center justify-center h-full">
           <p className="text-lg font-bold text-line-blue opacity-100">{alt}</p>
         </div>
