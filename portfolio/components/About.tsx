@@ -18,7 +18,7 @@ function About({}: Props) {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1.2 }}
-          className="w-56 h-56 rounded-full object-cover mt-44 md:mt-10 md:w-96 md:h-96"
+          className="w-56 h-56 rounded-full object-cover mt-32 md:mt-10 md:w-96 md:h-96"
           src="https://i.imgur.com/NnDN1QK.jpg?1"
         />
       </div>
