@@ -10,11 +10,11 @@ export default function Skills({}: Props) {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="min-h-screen flex relative flex-col text-center md:text-left xl:flex-row max-w-[2000px] xl:px-10 justify-center xl:space-y-0 mx-auto items-center"
+      className="min-h-screen flex relative flex-col text-center md:text-left max-w-[2000px] xl:px-10 justify-center xl:space-y-10 mx-auto items-center"
     >
       <h3 className="sectionHeader">Skills</h3>
 
-      <div className="grid grid-cols-4 gap-5">
+      <div className="grid grid-cols-4 gap-5 mt-20">
         <Skill
           src="https://w7.pngwing.com/pngs/201/90/png-transparent-logo-html-html5.png"
           alt="HTML"
@@ -62,6 +62,14 @@ export default function Skills({}: Props) {
         <Skill
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png"
           alt="TypeScript"
+        />
+        <Skill
+          src="https://coursework.vschool.io/content/images/2016/06/jwt.png"
+          alt="JWT"
+        />
+        <Skill
+          src="https://e7.pngegg.com/pngimages/307/948/png-clipart-socket-io-node-js-javascript-network-socket-websocket-electrical-cable-angle-triangle.png"
+          alt="Socket.io"
         />
       </div>
     </motion.div>
