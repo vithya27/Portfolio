@@ -1,9 +1,25 @@
 import React from "react";
 import { EnvelopeIcon } from "@heroicons/react/24/solid";
+import { useForm, SubmitHandler } from "react-hook-form";
 
+type Inputs = {
+  name: string;
+  email: string;
+  subject: string;
+  message: string;
+};
 type Props = {};
 
 function ContactMe({}: Props) {
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm<Inputs>();
+  const onSubmit: SubmitHandler<Inputs> = (formData) => {
+    window.location.href = `mailto:vithya.shankar@outlook.sg?subject=${formData.subject}&body=Hi, my name is ${formData.name}. ${formData.message}`;
+  };
   return (
     <div className="h-screen flex relative flex-col text-center max-w-7xl px-10 justify-evenly mx-auto items-center">
       <h3 className="sectionHeader">Contact</h3>
@@ -14,26 +30,36 @@ function ContactMe({}: Props) {
             great together
           </span>
         </h4>
-        <form className="flex flex-col space-y-2 w-fit mx-auto">
+        <form
+          onSubmit={handleSubmit(onSubmit)}
+          className="flex flex-col space-y-2 w-fit mx-auto"
+        >
           <div className="flex space-x-2">
             <input
+              {...register("name")}
               type="text"
               className="contactInput"
               placeholder="Name"
             ></input>
             <input
-              type="text"
+              {...register("email")}
+              type="email"
               className="contactInput"
-              placeholder="Contact"
+              placeholder="E-mail Address"
             ></input>
           </div>
           <input
+            {...register("subject")}
             type="text"
             className="contactInput"
-            placeholder="E-mail Address"
+            placeholder="Subject"
           ></input>
-          <textarea className="contactInput" placeholder="Message"></textarea>
-          <button className="bg-muted-blue p-5 hover:bg-font-blue hover:text-bg-blue">
+          <textarea
+            {...register("message")}
+            className="contactInput"
+            placeholder="Message"
+          ></textarea>
+          <button className="bg-muted-blue p-5 rounded-md font-bold text-lg hover:bg-font-blue hover:text-bg-blue ">
             Submit
           </button>
         </form>
