@@ -39,8 +39,8 @@ function About({}: Props) {
           comes when I manage to solve the issue. My specialties include quickly
           learning programming languages, responsive designs and problem
           solving. I look forward to learning more programming languages,
-          frameworks or principles which can aid in making efficient code to my
-          repertoire. <br /> <br />
+          frameworks or principles which can aid in making efficient code.{" "}
+          <br /> <br />
         </p>
       </div>
     </motion.div>
