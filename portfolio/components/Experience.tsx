@@ -19,7 +19,7 @@ export default function Experience({}: Props) {
       <div className="w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory h-screen">
         {/* Experience Card*/}
 
-        {resumeData.map((e: any) => {
+        {resumeData.map((e: any, key: number) => {
           return (
             <ExperienceCard
               src={e.src}

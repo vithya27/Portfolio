@@ -29,7 +29,7 @@ export default function ExperienceCard(props: ResumeProps) {
         <p className="uppercase py-5 text-muted-blue">{props.dates}</p>
 
         <ul className="list-disc space-y-4 ml-5 text-base text-justify h-3/6 overflow-y-auto">
-          {props.description.map((e: any) => {
+          {props.description.map((e: any, key: number) => {
             return <li>{e}</li>;
           })}
         </ul>
