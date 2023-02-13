@@ -1,5 +1,6 @@
 const resumeData = [
   {
+    index: 1,
     src: "https://seeklogo.com/images/G/general-assembly-logo-D5C634F07A-seeklogo.com.png",
     role: "Instructional Associate",
     company: "General Assembly",
@@ -12,6 +13,7 @@ const resumeData = [
     ],
   },
   {
+    index: 2,
     src: "https://upload.wikimedia.org/wikipedia/en/0/0c/Immigration_and_Checkpoints_Authority.jpg",
     role: "Team Leader (Inspector)",
     company: "Immigration & Checkpoints Authority",
@@ -26,6 +28,7 @@ const resumeData = [
   },
   ,
   {
+    index: 3,
     src: "https://upload.wikimedia.org/wikipedia/en/4/48/Singapore_Police_Force_crest.png",
     role: "Senior Officer Trainee",
     company: "Singapore Police Force",

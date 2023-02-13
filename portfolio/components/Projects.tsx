@@ -47,7 +47,10 @@ function Projects({}: Props) {
 
       <div className="relative mt-14 w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20">
         {projects.map((project, i) => (
-          <div className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 h-screen">
+          <div
+            key={i}
+            className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 h-screen"
+          >
             <motion.img
               initial={{ y: -300, opacity: 0 }}
               transition={{ duration: 1.2 }}
