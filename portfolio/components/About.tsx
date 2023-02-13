@@ -32,9 +32,9 @@ function About({}: Props) {
         </h4>
         <p className="text-base text-font-blue text-justify ">
           A spark ignited in me the first time I wrote a line of code to print
-          &aposHello World&apos on a webpage. I decided to take the plunge into
-          the field of software engineering from that moment. Web development is
-          a culmination of all my passions. It allows me to use my creativity to
+          'Hello World' on a webpage. I decided to take the plunge into the
+          field of software engineering from that moment. Web development is a
+          culmination of all my passions. It allows me to use my creativity to
           problem solve and I thoroughly enjoy the sense of fulfilment which
           comes when I manage to solve the issue. My specialties include quickly
           learning programming languages, responsive designs and problem
