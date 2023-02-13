@@ -69,13 +69,12 @@ function Projects({}: Props) {
               <div className="text-lg text-center font-semibold">
                 <a
                   href={project.github}
-                  target="_blank"
                   className="underline decoration-highlight-blue/50"
                 >
                   Github
                 </a>{" "}
                 {project.website ? (
-                  <a href={project.website} target="_blank">
+                  <a href={project.website}>
                     {" "}
                     |{" "}
                     <span className="underline decoration-highlight-blue/50">

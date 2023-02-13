@@ -22,6 +22,7 @@ export default function Experience({}: Props) {
         {resumeData.map((e: any) => {
           return (
             <ExperienceCard
+              key={e.index}
               index={e.index}
               src={e.src}
               role={e.role}
