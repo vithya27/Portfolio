@@ -25,7 +25,7 @@ function About({}: Props) {
 
       <div className="space-y-6 px-0 md:px-10 overflow-y-auto">
         <h4 className="text-4xl font-semibold">
-          Here is a little
+          Here is a little{" "}
           <span className="underline decoration-highlight-blue">
             background
           </span>
