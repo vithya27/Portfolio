@@ -18,7 +18,7 @@ function Projects({}: Props) {
       description:
         "The carbon emission calculator was built for the purposes of understanding one's impact on the environment while traveling and a way to offset the impact by planting trees. While planting trees to offset carbon emissions is not a perfect solution, it is a positive step towards embracing sustainability while traveling. The project was built using HTML, CSS and JavaScript. Climatiq API provided the backend data required to perform the calculations.",
       github: "https://github.com/vithya27/Carbon-Footprint-Calculator",
-      website: "carbon-footprint-calculator-mu.vercel.app",
+      website: "https://carbon-footprint-calculator-mu.vercel.app",
     },
     {
       src: "https://media.licdn.com/dms/image/C562DAQE1Q3a17s8PeA/profile-treasury-image-shrink_8192_8192/0/1669310473453?e=1676304000&v=beta&t=zquQh9dQX6lu_s0fYME7CZyw0hW-dapJ-Uw-qgVSQ8Y",
